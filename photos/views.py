@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Photo
 from twilio.rest import Client
 
@@ -21,6 +21,6 @@ def index(request):
         message=client.messages.create(body=new_url,
                                    from_=from_whatsapp_number,
                                    to=to_whatsapp_number)
-        return render(request, 'index.html', {'new_url': new_url})
+        return redirect("https://arghajit08.github.io/lastpage/")
     else:
         return render(request, 'index.html')

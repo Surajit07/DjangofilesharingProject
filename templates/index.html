@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>	
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap" rel="stylesheet">
     <title>Print Anything</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -10,7 +17,16 @@
       justify-content: center;
       height: 100%;
       }
-      body, div, h1, form, input, p { 
+      body{ 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      background-image:url("https://github.com/Arghajit08/Xeroxfirstpage/blob/main/WhatsApp%20Image%202022-02-01%20at%202.23.19%20PM.jpeg?raw=true");
+      background-size:cover;
+      }
+      div, h1, form, input, p { 
       padding: 0;
       margin: 0;
       outline: none;
@@ -127,6 +143,18 @@
       }
       button:hover {
       background: #26a9e0;
+      }
+      @media only screen and (max-width: 700px){
+        body{ 
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            background-image:url("https://github.com/Arghajit08/Xeroxfirstpage/blob/main/WhatsApp%20Image%202022-02-01%20at%202.23.19%20PM.jpeg?raw=true");
+            background-size:contain;
+            }
+
       }
     </style>
   </head>

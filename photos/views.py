@@ -11,7 +11,7 @@ def index(request):
         new_photo.save()
         new_url=str('https://xeroxfin.herokuapp.com'+new_photo.file.url)
         sid='ACad20495dd3bf324541f3c9a60657ddf9'
-        authToken='b7ed3a76c42f2057cb7e6755b389609d'
+        authToken='4086190c4fe03c8f3976e26a3dcecb83'
 
         client=Client(sid,authToken)
 

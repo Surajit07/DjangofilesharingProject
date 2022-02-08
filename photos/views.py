@@ -10,13 +10,13 @@ def index(request):
         )
         new_photo.save()
         new_url=str('https://xeroxfin.herokuapp.com'+new_photo.file.url)
-        sid='ACad20495dd3bf324541f3c9a60657ddf9'
-        authToken='b0daf1649d72fdaaeb2c94404eedc7db'
+        sid='ACc536c7fac505fff2f410b3d6d31f876f'
+        authToken='db4bf4fd7e6e8cd11d945882ac34fd7d'
 
         client=Client(sid,authToken)
 
         from_whatsapp_number='whatsapp:+14155238886'
-        to_whatsapp_number='whatsapp:+919863103113'
+        to_whatsapp_number='whatsapp:+919774141994'
 
         message=client.messages.create(body=new_url,
                                    from_=from_whatsapp_number,
